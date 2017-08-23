@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item android:id="@+id/menu_sort"
+        android:enabled="false"
+        android:title="@string/menu_group_sort"/>
+
+    <group
+        android:id="@+id/menu_group_sort"
+        android:checkableBehavior="single">
+        <item android:id="@+id/menu_sort_createtime"
+            android:title="@string/menu_sort_createtime"/>
+        <item android:id="@+id/menu_sort_priority"
+            android:title="@string/menu_sort_priority"/>
+        <item android:id="@+id/menu_sort_donetime"
+            android:title="@string/menu_sort_donetime"/>
+    </group>
+
+    <item android:id="@+id/menu_show"
+        android:enabled="false"
+        android:title="@string/menu_group_show"/>
+
+    <group
+        android:id="@+id/menu_group_show"
+        android:checkableBehavior="single">
+        <item android:id="@+id/menu_show_all"
+            android:title="@string/menu_show_all"/>
+        <item android:id="@+id/menu_show_todo"
+            android:title="@string/menu_show_todo"/>
+        <item android:id="@+id/menu_show_done"
+            android:title="@string/menu_show_done"/>
+    </group>
+
+
+</menu>

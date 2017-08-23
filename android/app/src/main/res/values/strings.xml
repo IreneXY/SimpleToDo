@@ -1,0 +1,32 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">SimpleToDo</string>
+    <string name="app_slogn">Start your work and tint your life today.</string>
+    <string name="app_slogn_blanktodo">Weee!! Every thing is done.</string>
+    <string name="app_slogn_blankdone">Hmm...You haven\'t set anything to be done.</string>
+
+    <string name="btn_add">ADD</string>
+    <string name="des_todo">You have <xliff:g id="count">%1$d</xliff:g> task(s) to do.</string>
+    <string name="des_done">You have done <xliff:g id="count">%1$d</xliff:g> task(s).</string>
+    <string name="des_all">You totally have <xliff:g id="count">%1$d</xliff:g> task(s).</string>
+    <string name="edit_fragmenttitle">Edit Event</string>
+    <string name="edit_title">Title:</string>
+    <string name="edit_save">SAVE</string>
+    <string name="edit_cancel">CANCEL</string>
+    <string name="edit_done">Done!</string>
+    <string name="edit_priority">Priority:</string>
+    <string name="edit_priority_low">Low</string>
+    <string name="edit_priority_normal">Normal</string>
+    <string name="edit_priority_high">High</string>
+    <string name="item_event_create">Created at <xliff:g id="time">%1$s</xliff:g></string>
+    <string name="item_event_finish">Done at <xliff:g id="time">%1$s</xliff:g></string>
+    <string name="item_event_todo">To do.</string>
+    <string name="menu_group_sort">Sort by:</string>
+    <string name="menu_sort_createtime">Create time</string>
+    <string name="menu_sort_donetime">Done time</string>
+    <string name="menu_sort_priority">Priority</string>
+    <string name="menu_group_show">Show:</string>
+    <string name="menu_show_all">All tasks</string>
+    <string name="menu_show_todo">Todo tasks</string>
+    <string name="menu_show_done">Done tasks</string>
+
+</resources>

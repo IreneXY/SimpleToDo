@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/vlist">
+
+    <android.support.v7.widget.CardView
+        style="@style/card">
+
+        <LinearLayout
+            style="@style/vlist"
+            android:padding="@dimen/margin_normal">
+
+            <LinearLayout
+                android:id="@+id/item_event_bg"
+                style="@style/vlist"
+                android:paddingLeft="5dp"
+                android:background="@color/red500">
+
+                <LinearLayout
+                    style="@style/vlist"
+                    android:background="@drawable/bg_card_event"
+                    android:paddingLeft="@dimen/margin_normal">
+
+                    <RelativeLayout
+                        style="@style/div">
+
+                        <ImageView
+                            android:id="@+id/item_event_done_icon"
+                            android:layout_width="@dimen/icon_normal"
+                            android:layout_height="@dimen/icon_normal"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:tint="@color/colorPrimary"
+                            android:src="@mipmap/ic_done"
+                            android:background="@mipmap/ic_bg"/>
+
+                        <TextView
+                            android:id="@+id/item_event_title"
+                            style="@style/text.h1"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@id/item_event_done_icon"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_normal"
+                            android:text="title"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        style="@style/hlist"
+                        android:weightSum="2">
+                        <TextView
+                            android:id="@+id/item_event_create"
+                            style="@style/text.des"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="create"
+                            android:gravity="left"/>
+
+                        <TextView
+                            android:id="@+id/item_event_finish"
+                            style="@style/text.des"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="done"
+                            android:gravity="right"
+                            android:textColor="@color/colorPrimary"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

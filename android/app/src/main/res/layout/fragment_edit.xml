@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/vlist"
+    android:layout_width="wrap_content"
+    android:padding="@dimen/margin_normal"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        style="@style/text.h1"
+        android:text="@string/edit_title"/>
+
+    <EditText
+        android:id="@+id/edit_title"
+        style="@style/text.h1"
+        android:layout_width="match_parent" />
+
+    <TextView
+        style="@style/text.h1"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:text="@string/edit_priority"/>
+
+    <LinearLayout
+        style="@style/vlist">
+
+        <LinearLayout
+            android:id="@+id/edit_low_area"
+            style="@style/hlist"
+            android:gravity="left|center_vertical">
+            <RadioButton
+                android:id="@+id/edit_low_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:background="@color/priorityLow"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"/>
+            <TextView
+                style="@style/text.normal"
+                android:text="@string/edit_priority_low"
+                android:textColor="@color/priorityLow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edit_normal_area"
+            style="@style/hlist"
+            android:gravity="left|center_vertical">
+            <RadioButton
+                android:id="@+id/edit_normal_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:background="@color/priorityNormal"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"/>
+            <TextView
+                style="@style/text.normal"
+                android:text="@string/edit_priority_normal"
+                android:textColor="@color/priorityNormal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edit_high_area"
+            style="@style/hlist"
+            android:gravity="left|center_vertical">
+            <RadioButton
+                android:id="@+id/edit_high_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:background="@color/priorityHigh"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"/>
+            <TextView
+                style="@style/text.normal"
+                android:text="@string/edit_priority_high"
+                android:textColor="@color/priorityHigh"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/hlist"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/edit_cancel"
+            style="@style/button.grey"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_normal"
+            android:text="@string/edit_cancel"/>
+
+        <TextView
+            android:id="@+id/edit_save"
+            style="@style/button.blue"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_margin="@dimen/margin_normal"
+            android:text="@string/edit_save"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context="com.mintminter.simpletodo.MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/area_add"
+        style="@style/card"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        app:cardElevation="2dp">
+        <RelativeLayout
+            style="@style/div"
+            android:padding="@dimen/margin_normal"
+            android:gravity="center"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/btn_add"
+                style="@style/button.blue"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/btn_add"/>
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/btn_add"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:gravity="left"
+                android:singleLine="true"
+                android:imeOptions="actionDone"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/des_area"
+        style="@style/hlist"
+        android:layout_margin="@dimen/margin_normal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/des_icon"
+            android:layout_width="@dimen/icon_small"
+            android:layout_height="@dimen/icon_small"
+            android:src="@mipmap/ic_todo"/>
+        <TextView
+            android:id="@+id/des_text"
+            style="@style/text.normal"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:text="des"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/des_area"
+        android:layout_above="@id/area_add"
+        android:layout_margin="@dimen/margin_normal"/>
+
+</RelativeLayout>
