@@ -46,6 +46,7 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 
 **Answer:** 
 I like coding on the Android platform becaue it supports versatile possibility to explore and implement creative UI and UX. Additionally, when I meet problems, I can check the open-sourced code to learn and resolve problems. It makes me learn technology on the OS level.
+
 Android uses the structure of an XML file to approach layouts. It is very straightforward and follows the hierarchical approach of the view tree. 
 
 **Question 2:** "Take a moment to reflect on the `ArrayAdapter` used in your pre-work. How would you describe an adapter in this context and what is its function in Android? Why do you think the adapter is important? Explain the purpose of the `convertView` in the `getView` method of the `ArrayAdapter`."
@@ -57,7 +58,7 @@ The `convertView` is the second parameter in the `getView` method of the `ArrayA
 
 ## License
 
-    Copyright 2017 [Irene Yu](https://github.com/IreneXY)
+    Copyright 2017 Irene Yu(https://github.com/IreneXY)
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
